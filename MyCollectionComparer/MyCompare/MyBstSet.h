@@ -219,11 +219,11 @@ public:
         return this->collection_name;
     }
 
-    bool add(const T& value) {
+    bool add(const T& value) override {
         return addRecursive(root, value); // Dodaje vrijednost u stablo.
     }
 
-    bool erase(const T& value) {
+    bool erase(const T& value) override {
         return eraseRecursive(root, value); // Briše vrijednost iz stabla.
     }
 
