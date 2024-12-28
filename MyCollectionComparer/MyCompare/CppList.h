@@ -6,11 +6,11 @@ using namespace std;
 
 template <class Tip>
 class CppList:public MyBaseCollection<Tip> {
-	list<Tip> lst;
+	std::list<Tip> lst;
     string collection_name;
 public:
     CppList() {
-        collection_name = "CppList";
+        collection_name = "Cpp std::list";
     }
 
     string get_collection_name() override {

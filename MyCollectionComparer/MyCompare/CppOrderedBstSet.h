@@ -11,7 +11,7 @@ class CppOrderedBstSet :public MyBaseCollection<Tip> {
     string collection_name;
 public:
     CppOrderedBstSet() {
-        collection_name = "CppSet (Ordered BST)";
+        collection_name = "Cpp std::set (Ordered BST)";
     }
 
     string get_collection_name() override {

@@ -10,7 +10,7 @@ using namespace std;
 // https://www.programiz.com/dsa/avl-tree
 // T predstavlja generièki tip podataka koji se koristi unutar stabla.
 template <class T>
-class MyBstSet1 : public MyBaseCollection<T> {
+class MyBstSet : public MyBaseCollection<T> {
 private:
     string collection_name;
     const int imbalance_threshold; // Maksimalno dozvoljena neuravnoteženost èvora prije balansiranja.
@@ -207,11 +207,11 @@ private:
     int right_rotate_counter = 0; // Brojaè rotacija udesno.
 
 public:
-    MyBstSet1(int threshold = 1) : imbalance_threshold(threshold) {
-        collection_name = "MyBstSet1 (sa rekurzijom), imbalance_threshold: " + to_string(imbalance_threshold);
+    MyBstSet(int threshold = 1) : imbalance_threshold(threshold) {
+        collection_name = "MyBstSet (sa rekurzijom), imbalance_threshold: " + to_string(imbalance_threshold);
     }
 
-    ~MyBstSet1() {
+    ~MyBstSet() {
         deleteTree(root); // Briše cijelo stablo prilikom uništenja objekta.
     }
 

@@ -2,14 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="MyCompare.cpp" />
-    <ClCompile Include="MyOrderedHashSet2.h">
-      <Filter>set</Filter>
-    </ClCompile>
-    <ClCompile Include="CppOrderedBstSet.h">
-      <Filter>set</Filter>
-    </ClCompile>
     <ClCompile Include="MyDictionary.h">
       <Filter>shared</Filter>
+    </ClCompile>
+    <ClCompile Include="CppOrderedBstSet.h">
+      <Filter>ordered_set</Filter>
+    </ClCompile>
+    <ClCompile Include="MyOrderedHashSet2.h">
+      <Filter>ordered_set</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -20,19 +20,16 @@
       <Filter>list</Filter>
     </ClInclude>
     <ClInclude Include="MyHashSet.h">
-      <Filter>set</Filter>
-    </ClInclude>
-    <ClInclude Include="MyOrderedHashSet1.h">
-      <Filter>set</Filter>
+      <Filter>unordered_set</Filter>
     </ClInclude>
     <ClInclude Include="CppHashSet.h">
-      <Filter>set</Filter>
+      <Filter>unordered_set</Filter>
     </ClInclude>
     <ClInclude Include="MyBaseCollection.h">
       <Filter>shared</Filter>
     </ClInclude>
-    <ClInclude Include="MyBstSet1.h">
-      <Filter>set</Filter>
+    <ClInclude Include="MyBstSet.h">
+      <Filter>unordered_set</Filter>
     </ClInclude>
     <ClInclude Include="MyBstNode.h">
       <Filter>shared</Filter>
@@ -43,6 +40,9 @@
     <ClInclude Include="MyHashFunctions.h">
       <Filter>helper</Filter>
     </ClInclude>
+    <ClInclude Include="MyOrderedHashSet1.h">
+      <Filter>ordered_set</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="list">
@@ -51,11 +51,14 @@
     <Filter Include="shared">
       <UniqueIdentifier>{2ae0be33-d342-41ca-93d0-a3f57f84ca6d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="set">
-      <UniqueIdentifier>{acf47186-88ab-4771-b1ad-0a61b8bac9aa}</UniqueIdentifier>
-    </Filter>
     <Filter Include="helper">
       <UniqueIdentifier>{0e7f4b44-628f-43b2-9347-d2a8ee175524}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ordered_set">
+      <UniqueIdentifier>{ce9d99a9-3e28-4309-a75a-aa9701a286ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unordered_set">
+      <UniqueIdentifier>{acf47186-88ab-4771-b1ad-0a61b8bac9aa}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -135,7 +135,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyBstNode.h" />
-    <ClInclude Include="MyBstSet1.h" />
+    <ClInclude Include="MyBstSet.h" />
     <ClInclude Include="MyComparator.h" />
     <ClInclude Include="MyBaseCollection.h" />
     <ClInclude Include="CppHashSet.h" />

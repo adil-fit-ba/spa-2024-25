@@ -10,7 +10,7 @@ class CppHashSet :public MyBaseCollection<Tip> {
     string collection_name;
 public:
     CppHashSet() {
-        collection_name = "Cpp Set (Unorederd HashSet)";
+        collection_name = "Cpp std::unordered_set (Unorederd HashSet)";
     }
 
     string get_collection_name() override {

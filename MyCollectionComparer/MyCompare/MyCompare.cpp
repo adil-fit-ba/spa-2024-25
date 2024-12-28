@@ -11,22 +11,17 @@
 #include "MyOrderedHashSet1.h"
 #include "MyOrderedHashSet2.h"
 #include "CppOrderedBstSet.h"
-#include "MyBstSet1.h"
+#include "MyBstSet.h"
 
 using namespace std;
 using namespace chrono;
 
 
-const int N = 5 * 1000; // Broj elemenata
+const int N = 5000 * 1000; // Broj elemenata
 
 struct testing_data {
     string name;
     vector<int> data_vector;
-
-    testing_data(const testing_data& obj) {
-        this->data_vector = obj.data_vector;
-        this->name = obj.name;
-    }
 
     testing_data(const string& name, vector<int> data_vector)
         : name(name), data_vector(data_vector)
@@ -120,7 +115,7 @@ my_testing_result test_my_collection(MyBaseCollection<Tip>* collection, vector<t
         result_item.items_found = 0;
         start = high_resolution_clock::now();
         for (size_t i = 0; i < data.data_vector.size(); ++i) {
-            if (collection->search(i))
+            if (collection->search(data.data_vector[i]))
             {
                 result_item.items_found++;
             }
@@ -152,20 +147,19 @@ int main() {
     vector<testing_data> testing_datas;
 
     testing_datas.push_back(my_random_vector(N, 1, N * 3));
-    testing_datas.push_back(my_increasing_vector(N, 0));
+//    testing_datas.push_back(my_increasing_vector(N, 0));
    
-    test_my_collection(new CppList<int>(), testing_datas).print();
-    test_my_collection(new MyList<int>(), testing_datas).print();
+//    test_my_collection(new CppList<int>(), testing_datas).print();
+//    test_my_collection(new MyList<int>(), testing_datas).print();
 
     test_my_collection(new CppHashSet<int>(), testing_datas).print();
     test_my_collection(new MyHashSet<int>(), testing_datas).print();
+    test_my_collection(new MyBstSet<int>(), testing_datas).print();
 
     test_my_collection(new CppOrderedBstSet<int>(), testing_datas).print();
-
-    test_my_collection(new MyOrderedHashSet1<int>(), testing_datas).print();
+//    test_my_collection(new MyOrderedHashSet1<int>(), testing_datas).print();
     test_my_collection(new MyOrderedHashSet2<int>(), testing_datas).print();
 
-    test_my_collection(new MyBstSet1<int>(), testing_datas).print();
 
     return 0;
 }
