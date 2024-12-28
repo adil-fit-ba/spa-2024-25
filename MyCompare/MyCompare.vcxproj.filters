@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="MyCompare.cpp" />
+    <ClCompile Include="MyOrderedHashSet2.h">
+      <Filter>set</Filter>
+    </ClCompile>
+    <ClCompile Include="CppOrderedBstSet.h">
+      <Filter>set</Filter>
+    </ClCompile>
+    <ClCompile Include="MyDictionary.h">
+      <Filter>shared</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CppList.h">
+      <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="MyList.h">
+      <Filter>list</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHashSet.h">
+      <Filter>set</Filter>
+    </ClInclude>
+    <ClInclude Include="MyOrderedHashSet1.h">
+      <Filter>set</Filter>
+    </ClInclude>
+    <ClInclude Include="CppHashSet.h">
+      <Filter>set</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBaseCollection.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBstSet1.h">
+      <Filter>set</Filter>
+    </ClInclude>
+    <ClInclude Include="MyBstNode.h">
+      <Filter>shared</Filter>
+    </ClInclude>
+    <ClInclude Include="MyComparator.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+    <ClInclude Include="MyHashFunctions.h">
+      <Filter>helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="list">
+      <UniqueIdentifier>{973acad5-ef7a-4ef7-81f6-a4602e3d5a23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shared">
+      <UniqueIdentifier>{2ae0be33-d342-41ca-93d0-a3f57f84ca6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="set">
+      <UniqueIdentifier>{acf47186-88ab-4771-b1ad-0a61b8bac9aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="helper">
+      <UniqueIdentifier>{0e7f4b44-628f-43b2-9347-d2a8ee175524}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
